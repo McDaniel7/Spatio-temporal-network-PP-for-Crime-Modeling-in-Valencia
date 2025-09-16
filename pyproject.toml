@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stnpp"
+version = "0.1.0"
+description = "Spatio-Temporal Neural Point Process (Hawkes with GAT/L3Net kernels)"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "Your Name", email = "you@example.com"}]
+dependencies = [
+  "numpy",
+  "torch",
+  "torch-geometric",
+  "pyyaml",
+]
+
+[project.scripts]
+stnpp = "stnpp.cli:main"
