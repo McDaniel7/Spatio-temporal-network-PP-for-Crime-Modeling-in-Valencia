@@ -1,0 +1,45 @@
+# Minimal example config (paths must be adjusted to your local data layout)
+data:
+  outline_shp: data/valencia_outline.shp
+  graph_pickle: data/Graph_drive_undirected_projection_info_crime.pkl
+  allspl_npy: data/Graph_drive_undirected_AllSPL.npy
+  nodes_pkl: data/Valencia_drive_undirected_nodes.pkl
+  streets_pkl: data/Valencia_drive_undirected_streets.pkl
+  int_grid_npy: data/int_grid.npy
+  int_grid_nwd_npy: data/int_grid_nwd.npy
+  int_grid_slabel_npy: data/int_grid_slabel.npy
+  grid_labels_npy: data/grid_labels.npy
+  events_pkl: data/crime_15_19.pkl
+
+train:
+  years: [2017, 2018]
+  T_span: [0.0, 1440.0]
+  T_used: [0.0, 120.0]
+  div: 1.0
+  seed: 42
+  num_epochs: 20
+  lr: 1e-4
+  batch_size: 5
+  l1_reg: true
+  lnu_reg: true
+  lam_l1: 100.0
+  lam_lnu: 100.0
+  print_iter: 5
+  log_iter: 50
+  tol: 1e-5
+  testing: false
+  save_model: true
+  save_path: .
+  new_folder: true
+  start_epoch: 0
+  modelname: example-model
+
+test:
+  years: [2019]
+  T_span: [0.0, 360.0]
+
+model:
+  n_class: 21
+  n_head: 8
+  out_channel: 64
+  stationary: false
