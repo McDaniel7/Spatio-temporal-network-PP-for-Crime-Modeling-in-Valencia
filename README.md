@@ -1,6 +1,14 @@
-# STNPP: Spatio‑Temporal Neural Point Process
+# Spatio‑Temporal-Network Point Process
 
-A clean, modular Python package that implements multivariate Hawkes-style spatio‑temporal point processes on networks with neural base intensity and learnable kernels (GAT/L3Net variants).
+A Python package that implements multivariate Hawkes-style spatio‑temporal point processes on networks with deep kernels parameterized by Graph Neural Networks (GNNs).
+
+## Model
+
+![](https://github.com/McDaniel7/Spatio-temporal-network-PP-for-Crime-Modeling-in-Valencia/blob/main/data/figures/multiple_networks.png)
+
+## Results
+
+![](https://github.com/McDaniel7/Spatio-temporal-network-PP-for-Crime-Modeling-in-Valencia/blob/main/data/figures/spatial_intensity_oos_prediction.png)
 
 ## Install
 
